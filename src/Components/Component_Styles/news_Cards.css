@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@100&family=Roboto+Slab:wght@100;700;900&family=Teko:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Oswald:wght@500&family=Poppins:wght@100&family=Roboto+Slab:wght@100;700;900&family=Teko:wght@400;700&display=swap');
+
+.news-bg{
+    background-color: rgb(255, 253, 253);
+    padding: 0 10% 3% 10%;
+    margin: 2% auto 3%;
+}
+
+.announce-tag {
+    padding-top: 5%;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 6%;
+    color: black;
+    font-weight: bolder;
+    font-size: 3.2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+.news-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+}
+.news-img{
+    height: 190px;
+}
+.news-card:before{
+    content: '';
+    transition: height 0.5s ease-out;
+    height: 0%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, transparent 0%, rgb(148, 166, 11) 150%);
+}
+.news-card:hover:before {
+    height: 100%;
+  }
+
+.news-title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.notice-element{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(135, 103, 103);
+    text-decoration: none;
+
+}
+.add-btn{
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    border: 0;
+    border-radius: 25px;
+}
+.delete-btn{
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    margin: 1%;
+}
+.sample-t{
+    color: black;
+}
+.contact-info-btn{
+    padding: 1% 2%;
+    border-radius: 25px;
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.temp
+{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px) 
+{
+    .news-bg
+    {
+        margin: 7% auto 10%;
+    }
+    
+    .announce-tag
+    {
+        font-size: 3rem;
+        margin-bottom: 16%;
+    }
+
+    .news-card
+    {
+        margin-bottom: 5%;
+    }
+}

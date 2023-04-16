@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.Top-sec{
+    text-align: center;
+    margin-top: 9%;
+}
+.top-text{
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.date-text{
+    color: #999;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+/* .line{
+    margin: 2% 10%;
+    color: black;
+} */
+hr {
+    margin: 2% 10%;
+    height:2px;
+    border:none;
+    color:black;
+    background-color:black;
+}
+.full-content{
+    margin: 2% 11%;
+    padding-bottom: 5%;
+}
+.headings{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    color: #666;
+    font-family: 'Teko', sans-serif;
+}
+.contentp{
+    /* font-weight: bold; */
+    color: #615f5f;
+    font-family: 'Teko', sans-serif;   
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.email-id{
+    color: rgb(88, 88, 236);
+    text-decoration: underline;
+}

@@ -1,0 +1,79 @@
+.reg{
+    background-color: #e0e9ed;
+}
+.registrations {
+    padding: 7%;
+}
+.reg-p{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 2%;
+}
+.reg-playerx{
+    padding: 1%;
+}
+.form-input2
+{
+    padding: 10px;
+    width: 70%;
+}
+.form-inputt{
+    max-width: 30%;
+    margin-top: 2%;
+}
+.register-btn {
+    background-color: #fff;
+    padding: 1% 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.register-btn:hover{
+    background-color: #1f2225 !important;
+    color: white !important;
+}
+.rules-sec {
+    background-color: #0d1b2a;
+    color : white;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.reg-sec{
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.reg-text{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1%;
+}
+.start-btn{
+background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  text-decoration: none;
+  margin: 2%;
+}

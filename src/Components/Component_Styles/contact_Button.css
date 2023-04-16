@@ -1,0 +1,102 @@
+
+.fab-button
+{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 50px 40px;
+  z-index: 5;
+  transition: all -25s;
+  cursor: pointer;
+  width: 180px;
+  transform: translateX(0);
+  opacity: 1;
+}
+.modal-bg{
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal-img {
+  padding-top: 7%;
+  width : 100%;
+  height: 85%;
+}
+
+.fab-text
+{
+  animation: rotation 6s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.modal-top 
+{
+  font-weight: bolder;
+  padding-left: 3%;
+}
+
+.input-form{
+  margin: 2%;
+  border-radius: 10px;
+  background-color: #ffe5bb;
+  width: 100%;
+  border: 0;
+  position: relative;
+  padding: 2.7% 10%;
+  
+}
+.form-icon .icon{
+  position: absolute;
+  z-index: 10;
+}
+.icon{
+  color: rgb(76, 72, 72);
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0;
+
+}
+.submit-btn 
+{
+  background-image: linear-gradient(to right, #df9ca5, #d3a67e, #dba872, #e0906e);
+  box-shadow: 0 4px 15px 0 rgba(194, 140, 142, 0.75);
+  font-weight: bold;
+  border: 0;
+  padding: 1% 5%;
+  margin: 2%;
+  border-radius: 5px;
+}
+ 
+@media screen and (max-width: 500px) 
+{
+
+  body {
+    width: 90%;
+  }
+    
+  .form-control 
+  {
+    flex-direction: column;
+  }
+  
+  .form-control input[type="text"], .form-control input[type="email"] 
+  {
+    width: inherit;
+  }
+
+  .fab-button
+  {
+    width: 28%;
+    margin-right: 5%;
+  }
+
+}

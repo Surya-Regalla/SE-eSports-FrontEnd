@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap');
+
+.sec-1{
+    background-color: #061125;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 20%;
+}
+.text-cs{
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.highlight-text{
+    color: #fc466b;
+    background: -webkit-linear-gradient(0deg, #fc466b 0%, #00dbde 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.extra-text{
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+.comingsoon-bg{
+    width: 100%;
+}
+.col-sec-1
+{
+    padding-right: 0;
+}
+.text-sec-2{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+.sec-2-links{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+.col-sec-2{
+    padding-left: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 37%, rgba(148,187,233,1) 100%);
+}

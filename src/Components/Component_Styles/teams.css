@@ -1,0 +1,21 @@
+.team-text{
+    padding-top: 7%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.full-team{
+    background-color: white;
+    margin: 2% 2%;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.bold-text{
+    font-weight: bold;
+}
+.main-class{
+    background-color: #e0e9ed;
+    padding: 1%;
+}

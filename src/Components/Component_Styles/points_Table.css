@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+table
+{
+    margin: 0 0 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+thead
+{
+    text-align: left;
+}
+
+td, th
+{
+    text-align: left;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+    padding-right: 1rem;
+    max-width: 219px;
+    padding-top: 0.75rem;
+    padding-bottom: calc(0.75rem -1px);
+}
+.background-p{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #c4d3f6;
+}
+.points
+{   
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 1.125rem;
+    padding-top: 0;
+}
+.os-text{
+    font-family: 'Cinzel', serif;
+    padding-top: 15%;
+    text-align: center;
+    font-size: 3.3rem;
+}
+.main-col{
+    background-color: #6c7ae0;
+    text-align: center;
+    padding-bottom: 0.5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset !important;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.main-col2{
+    background-color: #6c7ae0;
+    text-align: center;
+    padding-bottom: 0.5%;
+    border-top-left-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset !important;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.main-col3{
+    background-color: #6c7ae0;
+    text-align: center;
+    padding-bottom: 0.5%;
+    border-top-right-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset !important;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.main-col4{
+    background-color: #6c7ae0;
+    text-align: center;
+    padding-bottom: 0.5%;
+    border: 1px solid #c4d3f6;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset !important;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.points-row{
+    background-color: white;
+}
+.points-col{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.2;
+    font-weight: unset !important;
+}
+.points-row:hover{
+    background-color: #fae0e4;
+}
+.tourney-date{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.start-btn{
+    background: #5E5DF0;
+      border-radius: 999px;
+      box-shadow: #5E5DF0 0 10px 20px -10px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+      text-decoration: none;
+      margin: 2%;
+    }

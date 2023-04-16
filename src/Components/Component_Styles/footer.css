@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@100&family=Roboto+Slab:wght@100;700;900&family=Teko:wght@400;700&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+.footer-body {
+    background-color: rgb(36, 35, 34);
+    padding-bottom: 7%;
+    padding-top: 1.5%;
+}
+.footer-title{
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 20%;
+    text-decoration: overline;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 4%;
+    color: white;
+}
+.footer-elements {
+    text-decoration: none;
+    color: rgb(157, 145, 145);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.map-comp{
+    margin-top: 4%;
+}
+
+.footer-temp
+{
+    margin-left: 2%;
+}
+
+.footer-bottom {
+    background-color: rgb(27, 14, 14);
+    font-size: 0.9rem;
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.connect-logo{
+    margin-right: 2%;
+    color: white;
+}
+
+@media screen and (max-width: 500px) 
+{
+    .footer-body 
+    {
+        padding-bottom: 10%;
+        padding-top: 9%;
+    }
+
+    .footer-title{
+        font-weight: bolder;
+        font-size: larger;
+        margin-top: 50%;
+        margin-bottom: 4%;
+    }
+
+    .footer-bottom 
+    {
+        font-size: 0.8rem;
+    }
+}
