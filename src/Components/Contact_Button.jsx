@@ -39,7 +39,10 @@ function MyVerticallyCenteredModal(props) {
   function handleSubmit(event)
   {
       event.preventDefault();
-      axios.post("http://localhost:8080/contact-info", {items})
+      // axios.post("http://localhost:8080/contact-info", {items})
+      // .catch(error => { console.log("Error sending Contact Details: ", error) });
+
+      axios.post("https://esports-server.onrender.com/contact-info", {items})
       .catch(error => { console.log("Error sending Contact Details: ", error) });
 
       setItems({

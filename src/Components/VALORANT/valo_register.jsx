@@ -73,7 +73,10 @@ function RegisterVALO () {
     function handleSubmit(event)
     {
         event.preventDefault();
-        axios.post("http://localhost:8080/valo-register", {addData})
+        // axios.post("http://localhost:8080/valo-register", {addData})
+        // .catch(error => { console.log("Error sending Form Details: ", error) });
+
+        axios.post("https://esports-server.onrender.com/valo-register", {addData})
         .catch(error => { console.log("Error sending Form Details: ", error) });
 
         setAddData({
@@ -102,7 +105,10 @@ function RegisterVALO () {
     function handleClick2()
     {
         var gamename = "VALORANT", direct = "/valo-points-table";
-        axios.post("http://localhost:8080/tourni-starts", {gamename, direct})
+        // axios.post("http://localhost:8080/tourni-starts", {gamename, direct})
+        // .catch(error => { console.log("Error sending Tourni On Details: ", error) });
+
+        axios.post("https://esports-server.onrender.com/tourni-starts", {gamename, direct})
         .catch(error => { console.log("Error sending Tourni On Details: ", error) });
         navigate('/');
     }

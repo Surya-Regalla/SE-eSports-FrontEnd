@@ -55,7 +55,9 @@ export default function Navbar()
     function handleLogout()
     {
         document.cookie = 'Surya=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        axios.get("http://localhost:8080/logout").then((res) => {window.location.reload(false);});
+        //axios.get("http://localhost:8080/logout").then((res) => {window.location.reload(false);});
+
+        axios.get("https://esports-server.onrender.com/logout").then((res) => {window.location.reload(false);});
 
         //navigate('/');
     }

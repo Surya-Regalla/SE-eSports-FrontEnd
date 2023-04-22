@@ -57,7 +57,11 @@ export default function Points()
     }
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/bgmi-points-table").then((res) => {
+        // axios.get("http://localhost:8080/bgmi-points-table").then((res) => {
+        //   tempFunc(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/bgmi-points-table").then((res) => {
           tempFunc(res.data);
         });
     }, []);
@@ -81,7 +85,10 @@ export default function Points()
         {
           event.preventDefault();
     
-          axios.post("http://localhost:8080/bgmi-edit-points", {tableItems, ID})
+          // axios.post("http://localhost:8080/bgmi-edit-points", {tableItems, ID})
+          // .catch(error => { console.log("Error sending Table Details: ", error) });
+
+          axios.post("https://esports-server.onrender.com/bgmi-edit-points", {tableItems, ID})
           .catch(error => { console.log("Error sending Table Details: ", error) });
     
           setTableItems({ppoints: "", kpoints: ""});
@@ -147,7 +154,10 @@ export default function Points()
     function handleClick2()
     {
       var gamename = "BGMI", direct = "/coming-soon";
-      axios.post("http://localhost:8080/tourni-end", {gamename, direct})
+      // axios.post("http://localhost:8080/tourni-end", {gamename, direct})
+      // .catch(error => { console.log("Error sending Tourni End Details: ", error) });
+
+      axios.post("https://esports-server.onrender.com/tourni-end", {gamename, direct})
       .catch(error => { console.log("Error sending Tourni End Details: ", error) });
       navigate('/');
     }

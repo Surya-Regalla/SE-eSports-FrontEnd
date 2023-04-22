@@ -70,7 +70,11 @@ export default function Cards() {
   checkCookie();
 
   useEffect(()=> {
-    axios.get("http://localhost:8080/").then((res) => {
+    // axios.get("http://localhost:8080/").then((res) => {
+    //   setItems(res.data);
+    // });
+
+    axios.get("https://esports-server.onrender.com/").then((res) => {
       setItems(res.data);
     });
   }, []);
@@ -95,7 +99,10 @@ export default function Cards() {
     {
       event.preventDefault();
 
-      axios.post("http://localhost:8080/", {addItems})
+      // axios.post("http://localhost:8080/", {addItems})
+      // .catch(error => { console.log("Error sending Add Details: ", error) });
+
+      axios.post("https://esports-server.onrender.com/", {addItems})
       .catch(error => { console.log("Error sending Add Details: ", error) });
 
       setAddItems({game: "", status: "", date: ""});
@@ -176,7 +183,10 @@ export default function Cards() {
     {
       event.preventDefault();
 
-      axios.post("http://localhost:8080/edit-cards", {tableItems, ID})
+      // axios.post("http://localhost:8080/edit-cards", {tableItems, ID})
+      // .catch(error => { console.log("Error sending Card Details: ", error) });
+
+      axios.post("https://esports-server.onrender.com/edit-cards", {tableItems, ID})
       .catch(error => { console.log("Error sending Card Details: ", error) });
 
       setTableItems({status: "", date: ""});
@@ -240,7 +250,11 @@ export default function Cards() {
 
   function handleDelete(sample)
   {
-    axios.post("http://localhost:8080/delete", {sample})
+    // axios.post("http://localhost:8080/delete", {sample})
+    // .then((res) => {window.location.reload(false);})
+    // .catch(error => { console.log("Error sending Delete Details: ", error) });
+
+    axios.post("https://esports-server.onrender.com/delete", {sample})
     .then((res) => {window.location.reload(false);})
     .catch(error => { console.log("Error sending Delete Details: ", error) });
   }

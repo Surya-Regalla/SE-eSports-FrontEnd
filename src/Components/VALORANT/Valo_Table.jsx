@@ -58,7 +58,11 @@ export default function Points()
     }
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/valo-points-table").then((res) => {
+        // axios.get("http://localhost:8080/valo-points-table").then((res) => {
+        //   tempFunc(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/valo-points-table").then((res) => {
           tempFunc(res.data);
         });
     }, []);
@@ -84,7 +88,10 @@ export default function Points()
         {
           event.preventDefault();
     
-          axios.post("http://localhost:8080/valo-edit-points", {tableItems, ID})
+          // axios.post("http://localhost:8080/valo-edit-points", {tableItems, ID})
+          // .catch(error => { console.log("Error sending Table Details: ", error) });
+
+          axios.post("https://esports-server.onrender.com/valo-edit-points", {tableItems, ID})
           .catch(error => { console.log("Error sending Table Details: ", error) });
     
           setTableItems({played: "", wins: "", losses: "", tpoints: ""});
@@ -161,7 +168,10 @@ export default function Points()
     function handleClick2()
     {
       var gamename = "VALORANT", direct = "/coming-soon";
-      axios.post("http://localhost:8080/tourni-end", {gamename, direct})
+      // axios.post("http://localhost:8080/tourni-end", {gamename, direct})
+      // .catch(error => { console.log("Error sending Tourni End Details: ", error) });
+
+      axios.post("https://esports-server.onrender.com/tourni-end", {gamename, direct})
       .catch(error => { console.log("Error sending Tourni End Details: ", error) });
       navigate('/');
     }

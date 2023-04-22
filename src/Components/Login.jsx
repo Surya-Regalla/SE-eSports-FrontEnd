@@ -84,7 +84,11 @@ function Login()
             }
         }
 
-        axios.post("http://localhost:8080/login", {credential})
+        // axios.post("http://localhost:8080/login", {credential})
+        // .then(res => LoginCheck(res.data.flag))
+        // .catch(error => { console.log("Error sending Credentials: ", error) });
+
+        axios.post("https://esports-server.onrender.com/login", {credential})
         .then(res => LoginCheck(res.data.flag))
         .catch(error => { console.log("Error sending Credentials: ", error) });
 
@@ -92,7 +96,11 @@ function Login()
     }
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/login").then((res) => {
+        // axios.get("http://localhost:8080/login").then((res) => {
+        //   console.log(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/login").then((res) => {
           console.log(res.data);
         });
     }, []);

@@ -16,7 +16,11 @@ export default function History()
     }
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/valo-tourni-end").then((res) => {
+        // axios.get("http://localhost:8080/valo-tourni-end").then((res) => {
+        //     tempFunc(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/valo-tourni-end").then((res) => {
             tempFunc(res.data);
         });
     }, []);

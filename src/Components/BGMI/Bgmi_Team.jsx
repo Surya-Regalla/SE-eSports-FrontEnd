@@ -11,7 +11,11 @@ export default function Contact()
     const [items, setItems] = useState([]);
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/bgmi-teams").then((res) => {
+        // axios.get("http://localhost:8080/bgmi-teams").then((res) => {
+        //    setItems(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/bgmi-teams").then((res) => {
            setItems(res.data);
         });
     }, []);

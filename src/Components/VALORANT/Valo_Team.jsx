@@ -12,7 +12,11 @@ export default function Contact()
     const [items, setItems] = useState([]);
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/valo-teams").then((res) => {
+        // axios.get("http://localhost:8080/valo-teams").then((res) => {
+        //    setItems(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/valo-teams").then((res) => {
            setItems(res.data);
         });
     }, []);

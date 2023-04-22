@@ -12,7 +12,11 @@ export default function Contact()
     const [items, setItems] = useState([]);
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/ff-teams").then((res) => {
+        // axios.get("http://localhost:8080/ff-teams").then((res) => {
+        //    setItems(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/ff-teams").then((res) => {
            setItems(res.data);
         });
     }, []);

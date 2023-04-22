@@ -9,7 +9,11 @@ export default function History()
     const [items, setItems] = useState([]);
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/ff-tourni-end").then((res) => {
+        // axios.get("http://localhost:8080/ff-tourni-end").then((res) => {
+        //   setItems(res.data);
+        // });
+
+        axios.get("https://esports-server.onrender.com/ff-tourni-end").then((res) => {
           setItems(res.data);
         });
     }, []);

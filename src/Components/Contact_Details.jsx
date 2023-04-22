@@ -17,7 +17,10 @@ export default function Contact()
     }
 
     useEffect(()=> {
-        axios.get("http://localhost:8080/contact-info").then((res) => {
+        // axios.get("http://localhost:8080/contact-info").then((res) => {
+        //   tempFunc(res.data);
+        // });
+        axios.get("https://esports-server.onrender.com/contact-info").then((res) => {
           tempFunc(res.data);
         });
     }, []);
